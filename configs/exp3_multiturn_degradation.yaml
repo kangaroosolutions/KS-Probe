@@ -1,0 +1,32 @@
+experiment_id: exp3_multiturn_degradation
+description: "RQ3 — Multi-Turn Degradation: PRA as conversation turn count grows"
+
+models:
+  - claude-sonnet-4-6
+  - claude-opus-4-6
+  - gpt-4.1
+  - gpt-5.2
+  # - gemini-2.5-pro   # uncomment after adding GOOGLE_API_KEY to .env
+  - grok-4.1-fast
+  - deepseek-v3.2
+  # - sonar-pro         # uncomment after adding PPLX_API_KEY to .env
+
+seeds: [1, 2, 3, 4, 5]
+
+# Number of turns at which we probe
+turns: [2, 5, 10, 20, 30, 50, 80, 120]
+
+probes_per_run: 5
+probe_type_mix: [0.40, 0.35, 0.25]
+domain_mix: "equal"
+
+max_output_tokens: 1500
+max_concurrent: 3      # lower — conversations are long
+temperature: 0.0
+
+cost_confirm_threshold: 500.0
+dry_run: false
+mock_mode: false
+
+output_dir: outputs/exp3
+checkpoint_db: ""

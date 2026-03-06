@@ -1,0 +1,27 @@
+# Quick smoke-test config — no API keys needed, completes in seconds.
+# Usage: python scripts/run_experiment.py --config configs/mock_test.yaml --mock-mode
+
+experiment_id: exp1_context_fidelity
+description: "Mock smoke test — runs exp1 with MockAdapter, 2 models, 2 sizes, 2 seeds"
+
+models:
+  - mock
+
+seeds: [1, 2]
+
+context_sizes: [5000, 10000]
+
+probes_per_run: 3
+probe_type_mix: [0.40, 0.35, 0.25]
+domain_mix: "equal"
+
+max_output_tokens: 500
+max_concurrent: 2
+temperature: 0.0
+
+cost_confirm_threshold: 999999.0
+dry_run: false
+mock_mode: true
+
+output_dir: outputs/mock_test
+checkpoint_db: ""

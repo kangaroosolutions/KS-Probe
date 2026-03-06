@@ -1,0 +1,36 @@
+experiment_id: exp1_context_fidelity
+description: "RQ1 — Context Fidelity Decay: PRA as context grows 10K to 200K tokens"
+
+models:
+  - claude-sonnet-4-6
+  - claude-opus-4-6
+  - gpt-4.1
+  - gpt-5.2
+  # - gemini-2.5-pro   # uncomment after adding GOOGLE_API_KEY to .env
+  - grok-4.1-fast
+  - deepseek-v3.2
+  # - sonar-pro         # uncomment after adding PPLX_API_KEY to .env
+  # - llama-4-maverick  # uncomment only if running a local vLLM server
+
+seeds: [1, 2, 3, 4, 5]
+
+# Context sizes to sweep (tokens)
+context_sizes: [10000, 50000, 100000, 150000, 200000]
+
+# Probe settings
+probes_per_run: 10
+probe_type_mix: [0.40, 0.35, 0.25]   # explicit_recall, grounded_reasoning, implicit_context
+domain_mix: "equal"
+
+# Execution
+max_output_tokens: 2000
+max_concurrent: 4
+temperature: 0.0
+
+# Safety
+cost_confirm_threshold: 500.0
+dry_run: false
+mock_mode: false
+
+output_dir: outputs/exp1
+checkpoint_db: ""

@@ -1,0 +1,37 @@
+experiment_id: exp2_positional_recall
+description: "RQ2 — Positional Recall Mapping: PRA as probe position varies 0.0–1.0 at 50K tokens"
+
+models:
+  - claude-sonnet-4-6
+  - claude-opus-4-6
+  - gpt-4.1
+  - gpt-5.2
+  # - gemini-2.5-pro   # uncomment after adding GOOGLE_API_KEY to .env
+  - grok-4.1-fast
+  - deepseek-v3.2
+  # - sonar-pro         # uncomment after adding PPLX_API_KEY to .env
+  # - llama-4-maverick  # uncomment only if running a local vLLM server
+
+seeds: [1, 2, 3, 4, 5]
+
+# Fixed context size for positional sweep
+context_sizes: [50000]
+
+# 20 evenly-spaced probe positions from 0.05 to 0.95
+positions: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50,
+            0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00]
+
+probes_per_run: 1           # one probe per run — positional experiments
+probe_type_mix: [0.40, 0.35, 0.25]
+domain_mix: "equal"
+
+max_output_tokens: 1000
+max_concurrent: 6
+temperature: 0.0
+
+cost_confirm_threshold: 500.0
+dry_run: false
+mock_mode: false
+
+output_dir: outputs/exp2
+checkpoint_db: ""

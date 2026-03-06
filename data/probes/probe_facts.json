@@ -1,0 +1,4679 @@
+{
+  "probe_facts": [
+    {
+      "id": "PF-001",
+      "type": "explicit_recall",
+      "statement": "The internal ticket for the authentication regression is BUG-4471 and it was assigned to engineer Priya Nair.",
+      "questions": [
+        {
+          "q": "What is the bug ticket number for the authentication regression?",
+          "gold": "BUG-4471",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Who was assigned bug ticket BUG-4471?",
+          "gold": "Priya Nair",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which engineer is responsible for the authentication regression fix?",
+          "gold": "Priya Nair",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What kind of issue is BUG-4471?",
+          "gold": "authentication regression",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the ticket ID for the authentication issue assigned to Priya Nair.",
+          "gold": "BUG-4471",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-002",
+      "type": "explicit_recall",
+      "statement": "The staging deployment URL is https://staging.intl-api.corp/v3 and the environment token is ENV-STAGE-88F.",
+      "questions": [
+        {
+          "q": "What is the staging deployment URL?",
+          "gold": "https://staging.intl-api.corp/v3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the environment token for staging?",
+          "gold": "ENV-STAGE-88F",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which token is used for the staging environment?",
+          "gold": "ENV-STAGE-88F",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What path version is in the staging URL?",
+          "gold": "v3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Give the full staging URL including version.",
+          "gold": "https://staging.intl-api.corp/v3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-003",
+      "type": "explicit_recall",
+      "statement": "The CI/CD pipeline for the payments-service runs on runner node CI-NODE-17 with a timeout of 45 minutes.",
+      "questions": [
+        {
+          "q": "Which runner node handles the payments-service CI/CD pipeline?",
+          "gold": "CI-NODE-17",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the timeout for the payments-service pipeline?",
+          "gold": "45 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How long before the payments-service CI job times out?",
+          "gold": "45 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the CI node ID for payments-service?",
+          "gold": "CI-NODE-17",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the runner node and timeout for payments-service.",
+          "gold": "CI-NODE-17 with a timeout of 45 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-004",
+      "type": "explicit_recall",
+      "statement": "Repository prism-core is pinned to commit hash a3d9f21 for the Q2 release freeze.",
+      "questions": [
+        {
+          "q": "What commit hash is prism-core pinned to for the Q2 release?",
+          "gold": "a3d9f21",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which release freeze applies to commit a3d9f21 in prism-core?",
+          "gold": "Q2",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the repository pinned to commit a3d9f21.",
+          "gold": "prism-core",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the frozen commit for prism-core during Q2?",
+          "gold": "a3d9f21",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "During which release freeze is prism-core at commit a3d9f21?",
+          "gold": "Q2 release freeze",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-005",
+      "type": "explicit_recall",
+      "statement": "The API rate limit for the /search endpoint is 120 requests per minute per client token.",
+      "questions": [
+        {
+          "q": "What is the rate limit for the /search endpoint?",
+          "gold": "120 requests per minute",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How many requests per minute are allowed on /search per client?",
+          "gold": "120",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Per what unit are /search rate limits applied?",
+          "gold": "per client token",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the per-token RPM cap for /search?",
+          "gold": "120",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the complete rate limit rule for /search.",
+          "gold": "120 requests per minute per client token",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-006",
+      "type": "explicit_recall",
+      "statement": "Clinical trial NCT-2024-0078 enrolled 312 participants in the Phase II cohort, stratified by age group 45–65.",
+      "questions": [
+        {
+          "q": "What is the trial ID for the Phase II study with 312 participants?",
+          "gold": "NCT-2024-0078",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How many participants were enrolled in trial NCT-2024-0078?",
+          "gold": "312",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What age group was the stratification criterion for NCT-2024-0078?",
+          "gold": "45–65",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which trial phase is NCT-2024-0078?",
+          "gold": "Phase II",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Give the cohort size for trial NCT-2024-0078.",
+          "gold": "312",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-007",
+      "type": "explicit_recall",
+      "statement": "The investigational drug compound is designated IDP-5533 and its maximum tolerated dose established in Phase I was 80 mg/kg.",
+      "questions": [
+        {
+          "q": "What is the designation for the investigational drug?",
+          "gold": "IDP-5533",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum tolerated dose of IDP-5533?",
+          "gold": "80 mg/kg",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "In which phase was the MTD of IDP-5533 established?",
+          "gold": "Phase I",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the MTD for compound IDP-5533.",
+          "gold": "80 mg/kg",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What compound has a Phase I MTD of 80 mg/kg?",
+          "gold": "IDP-5533",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-008",
+      "type": "explicit_recall",
+      "statement": "The primary endpoint measurement interval is 16 weeks and the secondary endpoint interval is 32 weeks for study BMS-RCT-9.",
+      "questions": [
+        {
+          "q": "What is the primary endpoint interval for BMS-RCT-9?",
+          "gold": "16 weeks",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the secondary endpoint interval for BMS-RCT-9?",
+          "gold": "32 weeks",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which study has a 16-week primary and 32-week secondary endpoint?",
+          "gold": "BMS-RCT-9",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How long is the secondary follow-up in BMS-RCT-9?",
+          "gold": "32 weeks",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the study whose primary endpoint is at 16 weeks.",
+          "gold": "BMS-RCT-9",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-009",
+      "type": "explicit_recall",
+      "statement": "Contract clause 14.3(b) mandates a 30-day written notice period before any service termination.",
+      "questions": [
+        {
+          "q": "What notice period is required under clause 14.3(b)?",
+          "gold": "30 days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which contract clause governs service termination notice?",
+          "gold": "14.3(b)",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What form must the notice under clause 14.3(b) take?",
+          "gold": "written",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How many days' notice does clause 14.3(b) require?",
+          "gold": "30",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the termination notice requirement from clause 14.3(b).",
+          "gold": "30-day written notice",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-010",
+      "type": "explicit_recall",
+      "statement": "The GDPR compliance audit reference is AUDIT-EU-2025-441 and the next review is scheduled for September 14, 2026.",
+      "questions": [
+        {
+          "q": "What is the GDPR audit reference number?",
+          "gold": "AUDIT-EU-2025-441",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When is the next review for AUDIT-EU-2025-441?",
+          "gold": "September 14, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which regulation does AUDIT-EU-2025-441 cover?",
+          "gold": "GDPR",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Give the review date for the GDPR compliance audit.",
+          "gold": "September 14, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the reference ID for the GDPR audit due in September 2026?",
+          "gold": "AUDIT-EU-2025-441",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-011",
+      "type": "explicit_recall",
+      "statement": "The approved annual IT infrastructure budget for FY2026 is $4,750,000 and is tracked under cost center CC-IT-07.",
+      "questions": [
+        {
+          "q": "What is the FY2026 IT infrastructure budget?",
+          "gold": "$4,750,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which cost center tracks the FY2026 IT budget?",
+          "gold": "CC-IT-07",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the cost center for the $4,750,000 IT budget?",
+          "gold": "CC-IT-07",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How much is budgeted for IT infrastructure in FY2026?",
+          "gold": "$4,750,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the FY2026 IT budget and its cost center.",
+          "gold": "$4,750,000 under CC-IT-07",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-012",
+      "type": "explicit_recall",
+      "statement": "The portfolio code for the emerging-markets equity fund is EMF-3B and its current NAV is $128.40 per unit.",
+      "questions": [
+        {
+          "q": "What is the portfolio code for the emerging-markets equity fund?",
+          "gold": "EMF-3B",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the NAV per unit for portfolio EMF-3B?",
+          "gold": "$128.40",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which portfolio has a NAV of $128.40?",
+          "gold": "EMF-3B",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the fund associated with code EMF-3B.",
+          "gold": "emerging-markets equity fund",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the NAV and code for the emerging-markets equity fund.",
+          "gold": "EMF-3B at $128.40 per unit",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-013",
+      "type": "explicit_recall",
+      "statement": "Sprint 47 runs from March 3 to March 17, 2026, and the sprint goal is to deliver the real-time notifications module.",
+      "questions": [
+        {
+          "q": "What are the dates for Sprint 47?",
+          "gold": "March 3 to March 17, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the goal of Sprint 47?",
+          "gold": "deliver the real-time notifications module",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which sprint runs March 3–17, 2026?",
+          "gold": "Sprint 47",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When does Sprint 47 end?",
+          "gold": "March 17, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What module must be delivered by the end of Sprint 47?",
+          "gold": "real-time notifications module",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-014",
+      "type": "explicit_recall",
+      "statement": "Milestone M-9 (beta launch) is scheduled for April 28, 2026, and is owned by project manager Desmond Okafor.",
+      "questions": [
+        {
+          "q": "When is milestone M-9 scheduled?",
+          "gold": "April 28, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Who owns milestone M-9?",
+          "gold": "Desmond Okafor",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What does milestone M-9 represent?",
+          "gold": "beta launch",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which project manager is responsible for the beta launch milestone?",
+          "gold": "Desmond Okafor",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Give the date and owner for milestone M-9.",
+          "gold": "April 28, 2026, owned by Desmond Okafor",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-015",
+      "type": "explicit_recall",
+      "statement": "Team Helios has a sprint velocity of 67 story points and a current capacity of 8 engineers.",
+      "questions": [
+        {
+          "q": "What is Team Helios's sprint velocity?",
+          "gold": "67 story points",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How many engineers are on Team Helios?",
+          "gold": "8",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which team has a velocity of 67 story points?",
+          "gold": "Team Helios",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the capacity of Team Helios.",
+          "gold": "8 engineers",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the velocity and capacity of Team Helios?",
+          "gold": "67 story points, 8 engineers",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-016",
+      "type": "explicit_recall",
+      "statement": "The primary load balancer is hosted at IP 10.0.4.22 and uses health-check path /api/health with a 5-second interval.",
+      "questions": [
+        {
+          "q": "What is the IP of the primary load balancer?",
+          "gold": "10.0.4.22",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What path does the load balancer use for health checks?",
+          "gold": "/api/health",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How often does the health check run?",
+          "gold": "every 5 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the health-check interval for the load balancer at 10.0.4.22?",
+          "gold": "5 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the health-check configuration for the primary load balancer.",
+          "gold": "path /api/health every 5 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-017",
+      "type": "explicit_recall",
+      "statement": "The SLA for the data-ingestion pipeline guarantees 99.5% uptime monthly and a maximum processing latency of 800 ms.",
+      "questions": [
+        {
+          "q": "What uptime SLA applies to the data-ingestion pipeline?",
+          "gold": "99.5%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum allowed latency for data ingestion?",
+          "gold": "800 ms",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Over what period is the 99.5% uptime SLA measured?",
+          "gold": "monthly",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the latency guarantee for data ingestion.",
+          "gold": "800 ms",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What are the two key SLA metrics for the data-ingestion pipeline?",
+          "gold": "99.5% monthly uptime and 800 ms max latency",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-018",
+      "type": "explicit_recall",
+      "statement": "Error code E-5502 indicates a downstream timeout on the payments gateway and triggers a PagerDuty alert to on-call rotation OC-PAY.",
+      "questions": [
+        {
+          "q": "What does error code E-5502 mean?",
+          "gold": "downstream timeout on the payments gateway",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which PagerDuty rotation receives E-5502 alerts?",
+          "gold": "OC-PAY",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What alert does error E-5502 trigger?",
+          "gold": "PagerDuty alert to on-call rotation OC-PAY",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which on-call rotation handles payments gateway timeouts?",
+          "gold": "OC-PAY",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the meaning and alert destination for error E-5502.",
+          "gold": "downstream payments gateway timeout, alerts OC-PAY",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-019",
+      "type": "explicit_recall",
+      "statement": "The Kubernetes namespace for the analytics workloads is kube-ns-analytics-prod and its resource quota is 64 CPU cores and 256 GB RAM.",
+      "questions": [
+        {
+          "q": "What is the Kubernetes namespace for analytics production workloads?",
+          "gold": "kube-ns-analytics-prod",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What CPU quota is set for kube-ns-analytics-prod?",
+          "gold": "64 CPU cores",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What memory quota is set for kube-ns-analytics-prod?",
+          "gold": "256 GB RAM",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which namespace has a 64-core CPU quota?",
+          "gold": "kube-ns-analytics-prod",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Give the resource quotas for the analytics production namespace.",
+          "gold": "64 CPU cores and 256 GB RAM",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-020",
+      "type": "explicit_recall",
+      "statement": "The TLS certificate for api.corp.internal expires on December 1, 2026, and is managed by team SecOps.",
+      "questions": [
+        {
+          "q": "When does the TLS certificate for api.corp.internal expire?",
+          "gold": "December 1, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which team manages the api.corp.internal TLS certificate?",
+          "gold": "SecOps",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What domain does the expiring TLS certificate belong to?",
+          "gold": "api.corp.internal",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Who is responsible for the TLS certificate expiring in December 2026?",
+          "gold": "SecOps",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the expiry and owner for the api.corp.internal certificate.",
+          "gold": "December 1, 2026, managed by SecOps",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-021",
+      "type": "explicit_recall",
+      "statement": "Feature flag FEAT-DARK-MODE is enabled for 25% of users in the canary cohort starting from build 1.14.0.",
+      "questions": [
+        {
+          "q": "What percentage of users get feature flag FEAT-DARK-MODE in canary?",
+          "gold": "25%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "From which build version is FEAT-DARK-MODE available in canary?",
+          "gold": "1.14.0",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which feature flag is rolled out to 25% of the canary cohort?",
+          "gold": "FEAT-DARK-MODE",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "In which cohort is FEAT-DARK-MODE being tested?",
+          "gold": "canary cohort",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the canary rollout percentage for FEAT-DARK-MODE?",
+          "gold": "25%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-022",
+      "type": "explicit_recall",
+      "statement": "The database schema migration for table user_sessions is tracked in migration file 20260214_add_device_fingerprint.sql.",
+      "questions": [
+        {
+          "q": "What is the migration file name for the user_sessions schema change?",
+          "gold": "20260214_add_device_fingerprint.sql",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which table is modified by migration 20260214_add_device_fingerprint.sql?",
+          "gold": "user_sessions",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What column does migration 20260214 add to user_sessions?",
+          "gold": "device_fingerprint",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the SQL file that migrates user_sessions.",
+          "gold": "20260214_add_device_fingerprint.sql",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "On what date was the user_sessions migration created (from filename)?",
+          "gold": "20260214",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-023",
+      "type": "explicit_recall",
+      "statement": "The default JWT expiry for mobile clients is 72 hours and for web clients is 24 hours, configurable via AUTH_TOKEN_TTL.",
+      "questions": [
+        {
+          "q": "What is the JWT expiry for mobile clients?",
+          "gold": "72 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the JWT expiry for web clients?",
+          "gold": "24 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which configuration key controls the JWT expiry?",
+          "gold": "AUTH_TOKEN_TTL",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How much longer do mobile JWTs last compared to web JWTs?",
+          "gold": "48 hours longer",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the env var used to configure JWT TTL.",
+          "gold": "AUTH_TOKEN_TTL",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-024",
+      "type": "explicit_recall",
+      "statement": "Microservice order-fulfillment-svc is deployed on port 8082 and communicates with inventory-svc on port 8091.",
+      "questions": [
+        {
+          "q": "On which port is order-fulfillment-svc deployed?",
+          "gold": "8082",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "On which port does inventory-svc listen?",
+          "gold": "8091",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which service communicates with inventory-svc on port 8091?",
+          "gold": "order-fulfillment-svc",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the port for inventory-svc?",
+          "gold": "8091",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the ports for order-fulfillment-svc and inventory-svc.",
+          "gold": "8082 and 8091",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-025",
+      "type": "explicit_recall",
+      "statement": "The Prometheus scrape interval for cluster metrics is 15 seconds and the retention period is 90 days.",
+      "questions": [
+        {
+          "q": "What is the Prometheus scrape interval for cluster metrics?",
+          "gold": "15 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the Prometheus retention period?",
+          "gold": "90 days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How often does Prometheus scrape cluster metrics?",
+          "gold": "every 15 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "For how long are Prometheus cluster metrics retained?",
+          "gold": "90 days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the scrape interval and retention for Prometheus.",
+          "gold": "15 seconds scrape, 90 days retention",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-026",
+      "type": "explicit_recall",
+      "statement": "The placebo control arm for study APEX-7 contains 145 participants and uses saline injections as the sham treatment.",
+      "questions": [
+        {
+          "q": "How many participants are in the APEX-7 placebo arm?",
+          "gold": "145",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What sham treatment is used in the APEX-7 placebo arm?",
+          "gold": "saline injections",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which study has a 145-participant placebo arm?",
+          "gold": "APEX-7",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What does the control arm receive in study APEX-7?",
+          "gold": "saline injections",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the placebo arm size and treatment for APEX-7.",
+          "gold": "145 participants receiving saline injections",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-027",
+      "type": "explicit_recall",
+      "statement": "The biomarker threshold for treatment eligibility is a serum IL-6 level above 12.5 pg/mL in protocol PRO-MED-33.",
+      "questions": [
+        {
+          "q": "What biomarker threshold qualifies patients in PRO-MED-33?",
+          "gold": "serum IL-6 level above 12.5 pg/mL",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which biomarker is used for eligibility in PRO-MED-33?",
+          "gold": "serum IL-6",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum IL-6 level for eligibility in PRO-MED-33?",
+          "gold": "12.5 pg/mL",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the protocol that uses an IL-6 threshold of 12.5 pg/mL.",
+          "gold": "PRO-MED-33",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What unit is used for the IL-6 eligibility threshold?",
+          "gold": "pg/mL",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-028",
+      "type": "explicit_recall",
+      "statement": "The foreign exchange hedge ratio for EUR/USD exposure is 65%, reviewed quarterly under policy FX-POL-2024.",
+      "questions": [
+        {
+          "q": "What is the EUR/USD hedge ratio?",
+          "gold": "65%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How often is the hedge ratio reviewed?",
+          "gold": "quarterly",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which policy governs the EUR/USD hedge?",
+          "gold": "FX-POL-2024",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the hedge ratio and review frequency for EUR/USD.",
+          "gold": "65%, reviewed quarterly",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the FX policy that sets a 65% hedge ratio.",
+          "gold": "FX-POL-2024",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-029",
+      "type": "explicit_recall",
+      "statement": "The maximum drawdown limit for fund APEX-BOND-II is 8% and breaching it triggers a mandatory risk review.",
+      "questions": [
+        {
+          "q": "What is the maximum drawdown limit for APEX-BOND-II?",
+          "gold": "8%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What happens if APEX-BOND-II exceeds its drawdown limit?",
+          "gold": "mandatory risk review",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which fund has an 8% drawdown limit?",
+          "gold": "APEX-BOND-II",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What triggers a mandatory risk review in APEX-BOND-II?",
+          "gold": "breaching the 8% maximum drawdown",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the drawdown limit and consequence for APEX-BOND-II.",
+          "gold": "8% limit, triggers mandatory risk review",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-030",
+      "type": "explicit_recall",
+      "statement": "Regulatory filing reference REG-FIN-2026-009 must be submitted by March 31, 2026 to the Financial Conduct Authority.",
+      "questions": [
+        {
+          "q": "What is the deadline for regulatory filing REG-FIN-2026-009?",
+          "gold": "March 31, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "To which authority must REG-FIN-2026-009 be submitted?",
+          "gold": "Financial Conduct Authority",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the reference number for the March 2026 FCA filing?",
+          "gold": "REG-FIN-2026-009",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the regulator receiving filing REG-FIN-2026-009.",
+          "gold": "Financial Conduct Authority",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When is REG-FIN-2026-009 due?",
+          "gold": "March 31, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-031",
+      "type": "explicit_recall",
+      "statement": "Risk register item RR-014 has a probability of 0.4 and an impact score of 9 on a 10-point scale, placing it in the critical zone.",
+      "questions": [
+        {
+          "q": "What is the probability of risk register item RR-014?",
+          "gold": "0.4",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What impact score does RR-014 have?",
+          "gold": "9",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "In which zone does RR-014 fall?",
+          "gold": "critical zone",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What scale is used for the RR-014 impact score?",
+          "gold": "10-point scale",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the probability and impact for RR-014.",
+          "gold": "probability 0.4, impact 9 out of 10",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-032",
+      "type": "explicit_recall",
+      "statement": "The change-request window for production deployments is every Tuesday from 22:00 to 02:00 UTC.",
+      "questions": [
+        {
+          "q": "When is the production deployment change window?",
+          "gold": "every Tuesday from 22:00 to 02:00 UTC",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What timezone governs the production change-request window?",
+          "gold": "UTC",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "On which day are production deployments allowed?",
+          "gold": "Tuesday",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What time does the production change window open?",
+          "gold": "22:00 UTC",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How long is the weekly production deployment window?",
+          "gold": "4 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-033",
+      "type": "explicit_recall",
+      "statement": "Object storage bucket backups-prod-eu is replicated to region eu-west-2 with a replication lag SLA of under 60 seconds.",
+      "questions": [
+        {
+          "q": "Which region is backups-prod-eu replicated to?",
+          "gold": "eu-west-2",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the replication lag SLA for backups-prod-eu?",
+          "gold": "under 60 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the storage bucket that replicates to eu-west-2.",
+          "gold": "backups-prod-eu",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What storage bucket has a 60-second replication SLA?",
+          "gold": "backups-prod-eu",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the replication target and lag SLA for backups-prod-eu.",
+          "gold": "eu-west-2 with under 60 seconds lag",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-034",
+      "type": "explicit_recall",
+      "statement": "The Kafka topic for order-events has 12 partitions and a retention of 7 days with key-based compaction disabled.",
+      "questions": [
+        {
+          "q": "How many partitions does the order-events Kafka topic have?",
+          "gold": "12",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the retention period for the order-events Kafka topic?",
+          "gold": "7 days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is key-based compaction enabled on order-events?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the partition count for order-events.",
+          "gold": "12 partitions",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the order-events Kafka topic retention?",
+          "gold": "7 days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-035",
+      "type": "explicit_recall",
+      "statement": "The GraphQL API schema version is v2024-11 and it is pinned in the developer portal under gateway config GW-CONF-88.",
+      "questions": [
+        {
+          "q": "What is the current GraphQL API schema version?",
+          "gold": "v2024-11",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Where is the GraphQL schema version pinned?",
+          "gold": "developer portal under gateway config GW-CONF-88",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What config ID pins the GraphQL schema version?",
+          "gold": "GW-CONF-88",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the gateway config that locks the GraphQL schema.",
+          "gold": "GW-CONF-88",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the GraphQL schema version and its config location.",
+          "gold": "v2024-11 under GW-CONF-88",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-036",
+      "type": "explicit_recall",
+      "statement": "The on-call escalation policy EscPol-3 routes unacknowledged alerts to the VP of Engineering after 15 minutes.",
+      "questions": [
+        {
+          "q": "Which escalation policy routes alerts to the VP of Engineering?",
+          "gold": "EscPol-3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "After how many minutes does EscPol-3 escalate unacknowledged alerts?",
+          "gold": "15 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "To whom does EscPol-3 escalate after 15 minutes?",
+          "gold": "VP of Engineering",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What condition triggers escalation under EscPol-3?",
+          "gold": "unacknowledged alerts",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the escalation timeline under policy EscPol-3.",
+          "gold": "15 minutes before escalating to VP of Engineering",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-037",
+      "type": "explicit_recall",
+      "statement": "The canary deployment threshold for rollback is a 5% increase in 5xx error rate measured over a 10-minute window.",
+      "questions": [
+        {
+          "q": "What error rate increase triggers a canary rollback?",
+          "gold": "5%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Over what time window is the canary error rate measured?",
+          "gold": "10 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which HTTP status class is monitored for canary rollbacks?",
+          "gold": "5xx",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the canary rollback criteria.",
+          "gold": "5% increase in 5xx error rate over 10 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How is the 5xx rate window defined for canary rollback?",
+          "gold": "10-minute window",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-038",
+      "type": "explicit_recall",
+      "statement": "The data warehouse refresh job DW-JOB-NIGHTLY runs at 02:30 UTC and loads data from source schema raw_ingest.",
+      "questions": [
+        {
+          "q": "What time does DW-JOB-NIGHTLY run?",
+          "gold": "02:30 UTC",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which source schema does DW-JOB-NIGHTLY load from?",
+          "gold": "raw_ingest",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the job ID for the nightly data warehouse refresh?",
+          "gold": "DW-JOB-NIGHTLY",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the schema that feeds the nightly warehouse job.",
+          "gold": "raw_ingest",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the schedule and source for DW-JOB-NIGHTLY.",
+          "gold": "02:30 UTC from raw_ingest",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-039",
+      "type": "explicit_recall",
+      "statement": "Service mesh mutual TLS enforcement is enabled for all inter-service calls within namespace kube-ns-core using policy MTLS-POL-01.",
+      "questions": [
+        {
+          "q": "Is mTLS enforced in kube-ns-core?",
+          "gold": "Yes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which policy enforces mTLS in kube-ns-core?",
+          "gold": "MTLS-POL-01",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What namespace uses mTLS policy MTLS-POL-01?",
+          "gold": "kube-ns-core",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "For what type of calls is mTLS required in kube-ns-core?",
+          "gold": "all inter-service calls",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Name the mTLS policy applied in the core namespace.",
+          "gold": "MTLS-POL-01",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-040",
+      "type": "explicit_recall",
+      "statement": "The model registry entry for fraud-detection-v4 is at artifact path s3://models-prod/fraud/v4/model.pkl.",
+      "questions": [
+        {
+          "q": "What is the artifact path for fraud-detection-v4?",
+          "gold": "s3://models-prod/fraud/v4/model.pkl",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which model is stored at s3://models-prod/fraud/v4/model.pkl?",
+          "gold": "fraud-detection-v4",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What S3 bucket holds the fraud detection model?",
+          "gold": "models-prod",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "State the full artifact URI for fraud-detection-v4.",
+          "gold": "s3://models-prod/fraud/v4/model.pkl",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What file extension does the fraud-detection-v4 model have?",
+          "gold": "pkl",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-041",
+      "type": "grounded_reasoning",
+      "statement": "The approved vendor shortlist budget cap is $120,000. Vendor Nexalink submitted a quote of $135,000 for the network upgrade project.",
+      "questions": [
+        {
+          "q": "Is Vendor Nexalink within the approved budget cap? Explain.",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "135",
+            "120",
+            "over budget",
+            "exceeds"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much does Nexalink's quote exceed the budget cap?",
+          "gold": "$15,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Can Nexalink be selected without a budget exception? Why?",
+          "gold": "No, because their quote exceeds the $120,000 cap",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "exceeds",
+            "120"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What is the gap between the budget cap and Nexalink's quote?",
+          "gold": "$15,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should Nexalink proceed to contract? Justify.",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "over",
+            "budget",
+            "exception"
+          ],
+          "required_conclusion": "no"
+        }
+      ]
+    },
+    {
+      "id": "PF-042",
+      "type": "grounded_reasoning",
+      "statement": "The maximum allowed server provisioning time is 4 hours per SLA. The DevOps team provisioned server SRV-994 in 5 hours 20 minutes.",
+      "questions": [
+        {
+          "q": "Did the provisioning of SRV-994 meet the SLA? Explain.",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "5 hours",
+            "exceeds",
+            "violation",
+            "breach"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much did SRV-994 provisioning exceed the SLA?",
+          "gold": "1 hour 20 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the SLA limit for server provisioning?",
+          "gold": "4 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Was the SLA breached for SRV-994?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "breach",
+            "exceeded",
+            "violation"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "State the SLA outcome for SRV-994.",
+          "gold": "SLA breached by 1 hour 20 minutes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "breach",
+            "1 hour 20"
+          ],
+          "required_conclusion": "breached"
+        }
+      ]
+    },
+    {
+      "id": "PF-043",
+      "type": "grounded_reasoning",
+      "statement": "Team Aurora's sprint capacity is 54 story points. The product owner has requested 71 story points of work for the upcoming sprint.",
+      "questions": [
+        {
+          "q": "Can Team Aurora complete all requested work in the sprint?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "54",
+            "71",
+            "exceeds",
+            "over capacity"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How many story points exceed Team Aurora's capacity?",
+          "gold": "17",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is Team Aurora's sprint capacity?",
+          "gold": "54 story points",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the overloading amount for Team Aurora's sprint?",
+          "gold": "17 story points",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should the product owner reduce scope? Why?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "exceed",
+            "capacity",
+            "54",
+            "reduce"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-044",
+      "type": "grounded_reasoning",
+      "statement": "The server disk threshold for alerting is 85% utilization. Server DB-PRIMARY-02 currently shows 91% disk utilization.",
+      "questions": [
+        {
+          "q": "Should an alert fire for DB-PRIMARY-02?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "91%",
+            "85%",
+            "exceeds",
+            "threshold"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "By how much does DB-PRIMARY-02 exceed the disk alert threshold?",
+          "gold": "6%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the disk utilization alert threshold?",
+          "gold": "85%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is DB-PRIMARY-02 above or below the alert threshold?",
+          "gold": "above",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "above",
+            "exceeds",
+            "91%"
+          ],
+          "required_conclusion": "above"
+        },
+        {
+          "q": "What action should be taken for DB-PRIMARY-02?",
+          "gold": "Trigger an alert",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "alert",
+            "threshold",
+            "exceeded"
+          ],
+          "required_conclusion": "alert"
+        }
+      ]
+    },
+    {
+      "id": "PF-045",
+      "type": "grounded_reasoning",
+      "statement": "The contractual uptime guarantee is 99.9% per month. The service experienced 6 hours of downtime in March 2026 (744-hour month).",
+      "questions": [
+        {
+          "q": "Was the uptime SLA met in March 2026?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "0.81%",
+            "99.19%",
+            "6 hours",
+            "breach"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What was the actual uptime percentage in March 2026?",
+          "gold": "99.19%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum allowed monthly downtime for 99.9% SLA?",
+          "gold": "0.744 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "By how many hours did the service exceed the downtime allowance?",
+          "gold": "5.256 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Was a credit or penalty triggered under the SLA?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "breach",
+            "penalty",
+            "credit",
+            "exceeded"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-046",
+      "type": "grounded_reasoning",
+      "statement": "The maximum memory allocation per container is 4 GB. Container worker-batch-7 is configured with a 6 GB memory limit.",
+      "questions": [
+        {
+          "q": "Is container worker-batch-7 correctly configured?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "6 GB",
+            "exceeds",
+            "4 GB",
+            "over limit"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much does worker-batch-7 exceed the memory limit?",
+          "gold": "2 GB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the per-container memory cap?",
+          "gold": "4 GB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should worker-batch-7 be redeployed with corrected settings?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "exceed",
+            "4 GB",
+            "correct",
+            "redeploy"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What memory value should worker-batch-7 use?",
+          "gold": "4 GB or less",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "4 GB",
+            "maximum",
+            "reduce",
+            "correct"
+          ],
+          "required_conclusion": "4 GB or less"
+        }
+      ]
+    },
+    {
+      "id": "PF-047",
+      "type": "grounded_reasoning",
+      "statement": "Clinical protocol PRO-CARD-5 requires a minimum of 200 participants for statistical power. Enrollment has reached 187 participants.",
+      "questions": [
+        {
+          "q": "Has protocol PRO-CARD-5 met its enrollment requirement?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "187",
+            "200",
+            "below",
+            "insufficient"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How many more participants are needed to meet PRO-CARD-5's requirement?",
+          "gold": "13",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Can PRO-CARD-5 proceed to analysis?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "200",
+            "below",
+            "underpowered",
+            "insufficient"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What is the enrollment gap in PRO-CARD-5?",
+          "gold": "13 participants",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is PRO-CARD-5 statistically powered?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "below",
+            "underpowered",
+            "187",
+            "200"
+          ],
+          "required_conclusion": "no"
+        }
+      ]
+    },
+    {
+      "id": "PF-048",
+      "type": "grounded_reasoning",
+      "statement": "The loan-to-value ratio ceiling for commercial mortgages is 70%. Applicant firm WestEdge Corp applied for a loan at 78% LTV.",
+      "questions": [
+        {
+          "q": "Does WestEdge Corp's application comply with the LTV ceiling?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "78%",
+            "70%",
+            "exceeds",
+            "non-compliant"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much does WestEdge's LTV exceed the ceiling?",
+          "gold": "8%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum LTV for commercial mortgages?",
+          "gold": "70%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should WestEdge Corp's application be approved as submitted?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "exceeds",
+            "70%",
+            "ceiling"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What LTV ceiling applies to commercial mortgages?",
+          "gold": "70%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-049",
+      "type": "grounded_reasoning",
+      "statement": "The regulatory body requires a maximum of 14 business days to process a variance request. Request VAR-2026-118 was submitted on January 5 and approved on January 26 (15 business days).",
+      "questions": [
+        {
+          "q": "Was VAR-2026-118 processed within the regulatory deadline?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "15",
+            "14",
+            "exceeded",
+            "breach"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how many business days was VAR-2026-118 late?",
+          "gold": "1",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the regulatory time limit for variance requests?",
+          "gold": "14 business days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When was VAR-2026-118 approved?",
+          "gold": "January 26",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is there a compliance issue with VAR-2026-118?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "breach",
+            "15 days",
+            "14 days",
+            "exceeded"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-050",
+      "type": "grounded_reasoning",
+      "statement": "The quarterly marketing budget is $500,000. Campaigns run so far this quarter total $487,000. A new campaign costing $20,000 is proposed.",
+      "questions": [
+        {
+          "q": "Can the proposed $20,000 campaign be funded from the current quarter budget?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "7,000",
+            "over",
+            "487",
+            "500",
+            "exceeds"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What is the remaining budget after existing campaigns?",
+          "gold": "$13,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "By how much would the new campaign exceed the quarterly budget?",
+          "gold": "$7,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Can the full campaign run within this quarter's budget?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "exceed",
+            "13,000",
+            "7,000"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What percentage of the budget has already been spent?",
+          "gold": "97.4%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-051",
+      "type": "grounded_reasoning",
+      "statement": "The minimum A/B test sample size for 80% statistical power is 1,000 users per variant. Variant B has accumulated 820 users.",
+      "questions": [
+        {
+          "q": "Does Variant B have sufficient sample size?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "820",
+            "1,000",
+            "below",
+            "insufficient"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How many more users does Variant B need?",
+          "gold": "180",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum sample per variant?",
+          "gold": "1,000 users",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Can Variant B results be analyzed for 80% power?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "820",
+            "underpowered",
+            "insufficient",
+            "below 1,000"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What is the shortfall in Variant B's sample?",
+          "gold": "180 users",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-052",
+      "type": "grounded_reasoning",
+      "statement": "The maximum response time for Tier-1 support tickets is 2 hours. Ticket T1-8844 was opened at 09:00 and first responded to at 11:45.",
+      "questions": [
+        {
+          "q": "Was the Tier-1 SLA met for ticket T1-8844?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "2 hours 45",
+            "2:45",
+            "breached",
+            "exceeded"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How long did it take to respond to T1-8844?",
+          "gold": "2 hours 45 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "By how much was the Tier-1 SLA breached for T1-8844?",
+          "gold": "45 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the Tier-1 response time SLA?",
+          "gold": "2 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Was ticket T1-8844 a SLA breach?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "breach",
+            "2 hours",
+            "2:45",
+            "exceeded"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-053",
+      "type": "grounded_reasoning",
+      "statement": "Drug compound IDP-5533 must remain below 40°C during shipping. A batch was transported at 44°C for 3 hours.",
+      "questions": [
+        {
+          "q": "Was the IDP-5533 batch shipped within temperature limits?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "44°C",
+            "40°C",
+            "exceeded",
+            "excursion"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how many degrees did the shipping temperature exceed the limit?",
+          "gold": "4°C",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum shipping temperature for IDP-5533?",
+          "gold": "40°C",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is the batch compromised per shipping protocol?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "excursion",
+            "44°C",
+            "exceed",
+            "quarantine"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "How long was IDP-5533 exposed to excess temperature?",
+          "gold": "3 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-054",
+      "type": "grounded_reasoning",
+      "statement": "The change freeze period runs from December 15 to January 5. A deployment to production was made on December 20.",
+      "questions": [
+        {
+          "q": "Was the December 20 deployment compliant with the change freeze?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "freeze",
+            "December 20",
+            "prohibited",
+            "violation"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "When does the change freeze period start?",
+          "gold": "December 15",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When does the change freeze period end?",
+          "gold": "January 5",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Was December 20 inside the change freeze window?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "within",
+            "freeze",
+            "December 15",
+            "January 5"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What policy violation occurred with the December 20 deployment?",
+          "gold": "Deploying during a change freeze period",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "freeze",
+            "violation",
+            "prohibited",
+            "December 20"
+          ],
+          "required_conclusion": "change freeze violation"
+        }
+      ]
+    },
+    {
+      "id": "PF-055",
+      "type": "grounded_reasoning",
+      "statement": "The maximum allowable packet loss threshold is 0.1%. The network monitor reports 0.3% packet loss on link LINK-WAN-07.",
+      "questions": [
+        {
+          "q": "Is LINK-WAN-07 within acceptable packet loss?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "0.3%",
+            "0.1%",
+            "exceeds",
+            "above"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much does LINK-WAN-07 exceed the packet loss threshold?",
+          "gold": "0.2%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum allowable packet loss?",
+          "gold": "0.1%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should LINK-WAN-07 trigger an alert?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "alert",
+            "0.3%",
+            "exceeds",
+            "threshold"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What is the current packet loss on LINK-WAN-07?",
+          "gold": "0.3%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-056",
+      "type": "grounded_reasoning",
+      "statement": "The architecture review board requires review for any service handling more than 10,000 requests per second. Service analytics-aggregator peaks at 14,500 RPS.",
+      "questions": [
+        {
+          "q": "Does analytics-aggregator require an architecture review?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "14,500",
+            "10,000",
+            "exceeds",
+            "requires review"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "By how much does analytics-aggregator exceed the ARB threshold?",
+          "gold": "4,500 RPS",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the ARB review threshold?",
+          "gold": "10,000 requests per second",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What service peaks at 14,500 RPS?",
+          "gold": "analytics-aggregator",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is analytics-aggregator above or below the ARB review threshold?",
+          "gold": "above",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "above",
+            "exceeds",
+            "14,500",
+            "10,000"
+          ],
+          "required_conclusion": "above"
+        }
+      ]
+    },
+    {
+      "id": "PF-057",
+      "type": "grounded_reasoning",
+      "statement": "The minimum capital reserve ratio is 12%. Bank subsidiary CorpBank-NE reports a current capital ratio of 10.8%.",
+      "questions": [
+        {
+          "q": "Is CorpBank-NE meeting the minimum capital reserve requirement?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "10.8%",
+            "12%",
+            "below",
+            "deficient"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much is CorpBank-NE below the minimum capital ratio?",
+          "gold": "1.2%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum capital reserve ratio?",
+          "gold": "12%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is CorpBank-NE's current capital ratio?",
+          "gold": "10.8%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is regulatory intervention required for CorpBank-NE?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "below",
+            "12%",
+            "deficient",
+            "intervention"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-058",
+      "type": "grounded_reasoning",
+      "statement": "Project X has a runway of 8 months. It requires 4 engineers for 6 months and 2 engineers for the remaining 2 months.",
+      "questions": [
+        {
+          "q": "Is Project X's resource plan feasible within its 8-month runway?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "6 months",
+            "2 months",
+            "8 months",
+            "feasible",
+            "within"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "How many engineers are needed in the second phase of Project X?",
+          "gold": "2",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How long is the first phase of Project X?",
+          "gold": "6 months",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the total runway for Project X?",
+          "gold": "8 months",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Does the phased engineer plan sum to the project runway?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "6 plus 2",
+            "8 months",
+            "sum",
+            "equals"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-059",
+      "type": "grounded_reasoning",
+      "statement": "The content delivery network caches assets for 72 hours. The marketing team updated an image asset and expects it to be live immediately.",
+      "questions": [
+        {
+          "q": "Will the updated image appear immediately to all users?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "72 hours",
+            "cache",
+            "propagation",
+            "delay"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How long is the CDN cache duration?",
+          "gold": "72 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the issue with the marketing team's expectation?",
+          "gold": "Assets are cached for 72 hours so changes are not immediate",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "72 hours",
+            "cache",
+            "not immediate",
+            "delay"
+          ],
+          "required_conclusion": "cache delay"
+        },
+        {
+          "q": "What must the team do to force immediate cache refresh?",
+          "gold": "Invalidate or purge the CDN cache",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "invalidate",
+            "purge",
+            "cache",
+            "bust",
+            "refresh"
+          ],
+          "required_conclusion": "cache invalidation"
+        },
+        {
+          "q": "When will all CDN nodes serve the updated image without purging?",
+          "gold": "After 72 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-060",
+      "type": "grounded_reasoning",
+      "statement": "The maximum file upload size is 50 MB. A user attempted to upload a video file of 73 MB.",
+      "questions": [
+        {
+          "q": "Was the 73 MB upload successful?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "73 MB",
+            "50 MB",
+            "exceeds",
+            "rejected"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much did the upload exceed the size limit?",
+          "gold": "23 MB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum upload size?",
+          "gold": "50 MB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should the upload be rejected?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "reject",
+            "exceeds",
+            "50 MB",
+            "73 MB"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What error type should the system return?",
+          "gold": "File too large",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "too large",
+            "exceeds",
+            "50 MB",
+            "size limit",
+            "rejected"
+          ],
+          "required_conclusion": "file too large"
+        }
+      ]
+    },
+    {
+      "id": "PF-061",
+      "type": "grounded_reasoning",
+      "statement": "The peer review policy requires at least 2 approvals before merging to the main branch. Pull request PR-7712 has received 1 approval.",
+      "questions": [
+        {
+          "q": "Can PR-7712 be merged now?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "1 approval",
+            "2 approvals",
+            "insufficient",
+            "missing"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How many approvals does PR-7712 still need?",
+          "gold": "1",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum approval count for merging?",
+          "gold": "2",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is PR-7712 ready to merge?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "1",
+            "2",
+            "approval",
+            "missing",
+            "requires"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What must happen before PR-7712 can merge?",
+          "gold": "It needs 1 more approval",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "1 more",
+            "additional",
+            "approval",
+            "reviewer"
+          ],
+          "required_conclusion": "1 more approval"
+        }
+      ]
+    },
+    {
+      "id": "PF-062",
+      "type": "grounded_reasoning",
+      "statement": "Automated backups run every 6 hours. The last successful backup completed at 06:00. It is now 14:30.",
+      "questions": [
+        {
+          "q": "Is a backup overdue?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "overdue",
+            "8.5 hours",
+            "12:00",
+            "missed",
+            "8 hours"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "When was the last successful backup?",
+          "gold": "06:00",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How many backup cycles have been missed since 06:00?",
+          "gold": "1",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What time should the next backup have run?",
+          "gold": "12:00",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "By how much is the backup overdue at 14:30?",
+          "gold": "2 hours 30 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-063",
+      "type": "grounded_reasoning",
+      "statement": "Penetration test report PT-2025-77 found 3 critical vulnerabilities. The remediation SLA for critical findings is 72 hours.",
+      "questions": [
+        {
+          "q": "How many critical vulnerabilities were found in PT-2025-77?",
+          "gold": "3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the remediation SLA for critical vulnerabilities?",
+          "gold": "72 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which report number contains 3 critical findings?",
+          "gold": "PT-2025-77",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "If PT-2025-77 was issued on Monday at 09:00, what is the remediation deadline?",
+          "gold": "Thursday at 09:00",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "Thursday",
+            "09:00",
+            "72 hours",
+            "three days"
+          ],
+          "required_conclusion": "Thursday 09:00"
+        },
+        {
+          "q": "What category of findings has a 72-hour SLA?",
+          "gold": "critical",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-064",
+      "type": "grounded_reasoning",
+      "statement": "The API deprecation policy allows deprecated endpoints to remain active for exactly 6 months after the deprecation notice. Endpoint /v1/users was deprecated on October 1, 2025.",
+      "questions": [
+        {
+          "q": "When will endpoint /v1/users be decommissioned?",
+          "gold": "April 1, 2026",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How long is the deprecation grace period?",
+          "gold": "6 months",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which endpoint was deprecated on October 1, 2025?",
+          "gold": "/v1/users",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Has /v1/users been decommissioned as of March 2026?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "April 2026",
+            "still active",
+            "grace period"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "When did the /v1/users deprecation notice go out?",
+          "gold": "October 1, 2025",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-065",
+      "type": "grounded_reasoning",
+      "statement": "The minimum password length policy is 12 characters. User account acct-Fernwood was created with a password of 9 characters.",
+      "questions": [
+        {
+          "q": "Does acct-Fernwood's password meet the policy?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "9",
+            "12",
+            "below",
+            "non-compliant"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how many characters is acct-Fernwood's password short?",
+          "gold": "3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum password length?",
+          "gold": "12 characters",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should acct-Fernwood be required to reset their password?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "reset",
+            "non-compliant",
+            "9",
+            "12"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "Is acct-Fernwood's password policy-compliant?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "9 characters",
+            "12 characters",
+            "too short"
+          ],
+          "required_conclusion": "no"
+        }
+      ]
+    },
+    {
+      "id": "PF-066",
+      "type": "grounded_reasoning",
+      "statement": "The maximum number of failed login attempts before lockout is 5. User acct-MORLAND has failed 5 attempts in the last 10 minutes.",
+      "questions": [
+        {
+          "q": "Should acct-MORLAND be locked out?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "5 attempts",
+            "lockout",
+            "threshold",
+            "reached"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What is the lockout threshold?",
+          "gold": "5 failed attempts",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How many failed attempts has acct-MORLAND made?",
+          "gold": "5",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Has acct-MORLAND reached the lockout threshold?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "5",
+            "threshold",
+            "reached"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What action should the system take for acct-MORLAND?",
+          "gold": "Lock the account",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "lock",
+            "lockout",
+            "5 attempts",
+            "threshold"
+          ],
+          "required_conclusion": "account lockout"
+        }
+      ]
+    },
+    {
+      "id": "PF-067",
+      "type": "grounded_reasoning",
+      "statement": "The CI build pipeline must pass all unit tests before a merge is allowed. Build B-9924 has 3 failing unit tests.",
+      "questions": [
+        {
+          "q": "Can build B-9924 be merged?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "3 failing",
+            "tests must pass",
+            "cannot merge"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How many failing unit tests does build B-9924 have?",
+          "gold": "3",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What condition must be met before merging?",
+          "gold": "All unit tests must pass",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is build B-9924 in a mergeable state?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "3 failing",
+            "tests fail",
+            "not mergeable"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What must be resolved before B-9924 can merge?",
+          "gold": "The 3 failing unit tests",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "3 failing",
+            "unit tests",
+            "resolve",
+            "fix"
+          ],
+          "required_conclusion": "failing tests"
+        }
+      ]
+    },
+    {
+      "id": "PF-068",
+      "type": "grounded_reasoning",
+      "statement": "The supply chain policy requires dual-source vendors for any component with a single-source risk score above 7. Component PCB-CTRL-55 has a risk score of 8.5.",
+      "questions": [
+        {
+          "q": "Does PCB-CTRL-55 require dual-source vendors?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "8.5",
+            "7",
+            "above",
+            "dual-source",
+            "requires"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What is the risk score threshold for dual-sourcing?",
+          "gold": "7",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the risk score of PCB-CTRL-55?",
+          "gold": "8.5",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is PCB-CTRL-55 above the dual-source threshold?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "8.5",
+            "above 7",
+            "exceeds"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What sourcing action is required for PCB-CTRL-55?",
+          "gold": "Dual-source vendors",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "dual-source",
+            "two vendors",
+            "second supplier",
+            "8.5",
+            "policy"
+          ],
+          "required_conclusion": "dual-source"
+        }
+      ]
+    },
+    {
+      "id": "PF-069",
+      "type": "grounded_reasoning",
+      "statement": "The incident response policy mandates a post-mortem within 5 business days of resolution. Incident INC-2026-044 was resolved on February 10.",
+      "questions": [
+        {
+          "q": "When is the post-mortem due for INC-2026-044?",
+          "gold": "February 17",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the post-mortem deadline from resolution?",
+          "gold": "5 business days",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When was INC-2026-044 resolved?",
+          "gold": "February 10",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is a post-mortem mandatory for INC-2026-044?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "mandatory",
+            "policy",
+            "5 business days"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "What document must be produced after INC-2026-044?",
+          "gold": "A post-mortem",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "post-mortem",
+            "5 business days",
+            "incident response"
+          ],
+          "required_conclusion": "post-mortem"
+        }
+      ]
+    },
+    {
+      "id": "PF-070",
+      "type": "grounded_reasoning",
+      "statement": "The data retention policy mandates deletion of PII after 3 years. A record set tagged user-cohort-2021-Q1 was created in January 2021.",
+      "questions": [
+        {
+          "q": "Should user-cohort-2021-Q1 data have been deleted by now (March 2026)?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "January 2024",
+            "3 years",
+            "expired",
+            "delete"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "When was user-cohort-2021-Q1 created?",
+          "gold": "January 2021",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the PII retention limit?",
+          "gold": "3 years",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "By when should user-cohort-2021-Q1 have been deleted?",
+          "gold": "January 2024",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is retaining user-cohort-2021-Q1 a policy violation?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "violation",
+            "expired",
+            "3 years",
+            "January 2024"
+          ],
+          "required_conclusion": "yes"
+        }
+      ]
+    },
+    {
+      "id": "PF-071",
+      "type": "grounded_reasoning",
+      "statement": "The energy efficiency rating threshold for procurement is a minimum PUE of 1.4 or better (lower is better). Data center DC-APEX-3 has a PUE of 1.6.",
+      "questions": [
+        {
+          "q": "Does DC-APEX-3 meet the procurement energy threshold?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "1.6",
+            "1.4",
+            "above",
+            "fails",
+            "worse"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What is the maximum acceptable PUE for procurement?",
+          "gold": "1.4",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is DC-APEX-3's PUE?",
+          "gold": "1.6",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is DC-APEX-3's PUE better or worse than the threshold?",
+          "gold": "worse",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "worse",
+            "higher",
+            "1.6",
+            "1.4",
+            "fails"
+          ],
+          "required_conclusion": "worse"
+        },
+        {
+          "q": "Can DC-APEX-3 be procured under the energy efficiency policy?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "1.6",
+            "1.4",
+            "fails",
+            "exceeds"
+          ],
+          "required_conclusion": "no"
+        }
+      ]
+    },
+    {
+      "id": "PF-072",
+      "type": "grounded_reasoning",
+      "statement": "The maximum batch job runtime is 6 hours. Batch job BATCH-RPT-MONTHLY has been running for 7 hours 15 minutes.",
+      "questions": [
+        {
+          "q": "Is BATCH-RPT-MONTHLY within its allowed runtime?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "7 hours",
+            "6 hours",
+            "exceeded",
+            "overtime"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "By how much has BATCH-RPT-MONTHLY exceeded its time limit?",
+          "gold": "1 hour 15 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum allowed batch job runtime?",
+          "gold": "6 hours",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should BATCH-RPT-MONTHLY be terminated?",
+          "gold": "Yes",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "yes",
+            "terminate",
+            "exceeded",
+            "6 hours",
+            "overtime"
+          ],
+          "required_conclusion": "yes"
+        },
+        {
+          "q": "How long has BATCH-RPT-MONTHLY been running?",
+          "gold": "7 hours 15 minutes",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-073",
+      "type": "grounded_reasoning",
+      "statement": "The open-source license policy prohibits GPL-licensed libraries in commercial products. Library log-rapid v2.1 is GPL-3.0 licensed.",
+      "questions": [
+        {
+          "q": "Can log-rapid v2.1 be used in a commercial product?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "GPL",
+            "prohibited",
+            "commercial",
+            "policy"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What license does log-rapid v2.1 carry?",
+          "gold": "GPL-3.0",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which license type is prohibited in commercial products?",
+          "gold": "GPL",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should log-rapid v2.1 be included in the project dependency list?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "GPL",
+            "prohibited",
+            "commercial",
+            "remove"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What must happen if log-rapid v2.1 is already in the codebase?",
+          "gold": "It must be removed or replaced with a compatible license",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "remove",
+            "replace",
+            "GPL",
+            "commercial",
+            "incompatible"
+          ],
+          "required_conclusion": "must be removed"
+        }
+      ]
+    },
+    {
+      "id": "PF-074",
+      "type": "grounded_reasoning",
+      "statement": "The application requires a minimum of 4 GB free RAM to launch. The target host machine has 2 GB free RAM.",
+      "questions": [
+        {
+          "q": "Can the application launch on the target host?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "2 GB",
+            "4 GB",
+            "insufficient",
+            "not enough RAM"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "How much free RAM does the target host have?",
+          "gold": "2 GB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum free RAM required?",
+          "gold": "4 GB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "By how much RAM is the host below the minimum?",
+          "gold": "2 GB",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Should the application be deployed to this host?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "2 GB",
+            "insufficient",
+            "4 GB",
+            "below"
+          ],
+          "required_conclusion": "no"
+        }
+      ]
+    },
+    {
+      "id": "PF-075",
+      "type": "grounded_reasoning",
+      "statement": "The firewall rule permits inbound traffic on port 443 only. An application is attempting to bind to port 8080 for external access.",
+      "questions": [
+        {
+          "q": "Will port 8080 receive external traffic through the firewall?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "8080",
+            "443",
+            "blocked",
+            "not permitted"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "Which port is permitted by the firewall?",
+          "gold": "443",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which port is the application attempting to use?",
+          "gold": "8080",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is the application's port request compliant with the firewall rule?",
+          "gold": "No",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "no",
+            "8080",
+            "443",
+            "blocked",
+            "not allowed"
+          ],
+          "required_conclusion": "no"
+        },
+        {
+          "q": "What change is needed for the application to receive external traffic?",
+          "gold": "The application must use port 443 or the firewall rule must be updated",
+          "scoring": "keyword_rule",
+          "keywords": [
+            "443",
+            "port",
+            "firewall",
+            "change",
+            "update",
+            "use 443"
+          ],
+          "required_conclusion": "use port 443"
+        }
+      ]
+    },
+    {
+      "id": "PF-076",
+      "type": "implicit_context",
+      "statement": "CRITICAL SYSTEM REQUIREMENT: All API responses MUST include a timestamp field in ISO 8601 format. This is mandatory for audit compliance.",
+      "questions": [
+        {
+          "q": "Design the response schema for the /orders endpoint.",
+          "gold": "timestamp field required",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What fields must every API response contain?",
+          "gold": "timestamp",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design a user profile API response.",
+          "gold": "timestamp field required",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create a payment confirmation API response schema.",
+          "gold": "timestamp field required",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "List the mandatory fields in all API responses.",
+          "gold": "timestamp",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-077",
+      "type": "implicit_context",
+      "statement": "BINDING REQUIREMENT: Every database write operation MUST be wrapped in a transaction with rollback on failure. No exceptions.",
+      "questions": [
+        {
+          "q": "Write the schema for the order-creation service database layer.",
+          "gold": "transaction",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What must surround all database write operations?",
+          "gold": "transaction",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the user registration database handler.",
+          "gold": "transaction with rollback",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What happens on a failed database write?",
+          "gold": "rollback",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the payment record insertion logic.",
+          "gold": "transaction",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-078",
+      "type": "implicit_context",
+      "statement": "MANDATORY SECURITY POLICY: All passwords must be hashed using bcrypt with a minimum cost factor of 12 before storage.",
+      "questions": [
+        {
+          "q": "Design the user authentication storage schema.",
+          "gold": "bcrypt cost factor 12",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What algorithm must be used for password hashing?",
+          "gold": "bcrypt",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the minimum bcrypt cost factor?",
+          "gold": "12",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the user registration password handling code.",
+          "gold": "bcrypt",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How must passwords be stored in the system?",
+          "gold": "bcrypt with cost factor 12",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-079",
+      "type": "implicit_context",
+      "statement": "ARCHITECTURAL MANDATE: The system must support horizontal scaling. All services must be stateless — no session state may be stored in application memory.",
+      "questions": [
+        {
+          "q": "Design the session management approach for the user portal.",
+          "gold": "stateless",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Where must session state NOT be stored?",
+          "gold": "application memory",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the cart service architecture.",
+          "gold": "stateless",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What scaling model is required?",
+          "gold": "horizontal scaling",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the authentication middleware design.",
+          "gold": "stateless",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-080",
+      "type": "implicit_context",
+      "statement": "COMPLIANCE RULE: All log entries containing PII must be masked before writing to any log store. PII includes email addresses, phone numbers, and SSNs.",
+      "questions": [
+        {
+          "q": "Design the logging middleware for the user service.",
+          "gold": "PII masking",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What three types of data must be masked in logs?",
+          "gold": "email addresses, phone numbers, and SSNs",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the audit log schema for the payment service.",
+          "gold": "PII masked",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What must happen to PII before it is written to logs?",
+          "gold": "masked",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the error logging pipeline for the API gateway.",
+          "gold": "PII masking",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-081",
+      "type": "implicit_context",
+      "statement": "HARD REQUIREMENT: The maximum API response time for any endpoint is 500 ms under P99 load. Endpoints exceeding this must be optimized or cached.",
+      "questions": [
+        {
+          "q": "Design the SLA monitoring dashboard.",
+          "gold": "500 ms P99",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the P99 response time limit?",
+          "gold": "500 ms",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What must happen if an endpoint exceeds 500 ms P99?",
+          "gold": "optimized or cached",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Set up alerting thresholds for the API gateway.",
+          "gold": "500 ms",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the performance test acceptance criteria.",
+          "gold": "500 ms P99",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-082",
+      "type": "implicit_context",
+      "statement": "REGULATORY MANDATE: All financial transactions above $10,000 must be automatically flagged for AML (anti-money laundering) review.",
+      "questions": [
+        {
+          "q": "Design the transaction processing pipeline.",
+          "gold": "AML flag above $10,000",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What threshold triggers AML review?",
+          "gold": "$10,000",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What does AML stand for in this context?",
+          "gold": "anti-money laundering",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the transaction monitoring rule set.",
+          "gold": "flag transactions above $10,000",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the compliance reporting module for transactions.",
+          "gold": "AML flag $10,000",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-083",
+      "type": "implicit_context",
+      "statement": "CRITICAL OPERATIONAL RULE: The system must emit a heartbeat event every 30 seconds to the monitoring bus. Absence of heartbeat triggers a P1 incident.",
+      "questions": [
+        {
+          "q": "Design the service health reporting module.",
+          "gold": "heartbeat every 30 seconds",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What event frequency is required from each service?",
+          "gold": "every 30 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What incident priority triggers if heartbeat is absent?",
+          "gold": "P1",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the monitoring integration for a new microservice.",
+          "gold": "30-second heartbeat",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the liveness check implementation.",
+          "gold": "heartbeat 30 seconds",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-084",
+      "type": "implicit_context",
+      "statement": "SECURITY STANDARD: All inter-service communication must use mutual TLS (mTLS). Plaintext HTTP between services is strictly prohibited.",
+      "questions": [
+        {
+          "q": "Design the service mesh configuration for the payment cluster.",
+          "gold": "mTLS",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What protocol must all inter-service communication use?",
+          "gold": "mutual TLS (mTLS)",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is plaintext HTTP allowed between services?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the network policy for the backend services.",
+          "gold": "mTLS required",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the certificate management strategy for microservices.",
+          "gold": "mTLS",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-085",
+      "type": "implicit_context",
+      "statement": "DATA GOVERNANCE RULE: All data exported to external partners must pass through the DLP (Data Loss Prevention) gateway at dlp.corp.internal before transmission.",
+      "questions": [
+        {
+          "q": "Design the partner data export pipeline.",
+          "gold": "DLP gateway dlp.corp.internal",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What gateway must all external data exports pass through?",
+          "gold": "dlp.corp.internal",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What does DLP stand for?",
+          "gold": "Data Loss Prevention",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the third-party API integration design.",
+          "gold": "DLP gateway",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the data export approval workflow.",
+          "gold": "DLP gateway at dlp.corp.internal",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-086",
+      "type": "implicit_context",
+      "statement": "PERFORMANCE BASELINE: All database queries must complete in under 100 ms. Queries exceeding this must use indexed columns or be rewritten with pagination.",
+      "questions": [
+        {
+          "q": "Design the search API database layer.",
+          "gold": "under 100 ms",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum allowed query execution time?",
+          "gold": "100 ms",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What two remedies apply for slow queries?",
+          "gold": "indexed columns or pagination",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the reporting module database design.",
+          "gold": "100 ms limit",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the data export query strategy.",
+          "gold": "under 100 ms, indexed or paginated",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-087",
+      "type": "implicit_context",
+      "statement": "AVAILABILITY REQUIREMENT: The system must implement circuit breakers for all downstream service calls with a failure threshold of 50% and a recovery window of 30 seconds.",
+      "questions": [
+        {
+          "q": "Design the payment gateway integration.",
+          "gold": "circuit breaker",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What failure threshold triggers the circuit breaker?",
+          "gold": "50%",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the circuit breaker recovery window?",
+          "gold": "30 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the third-party API call strategy.",
+          "gold": "circuit breaker 50% failure",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the resilience pattern for downstream calls.",
+          "gold": "circuit breaker",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-088",
+      "type": "implicit_context",
+      "statement": "CONTENT POLICY: All user-generated content must pass through the content moderation API at content-mod.internal before being published. No direct publishing.",
+      "questions": [
+        {
+          "q": "Design the community post submission flow.",
+          "gold": "content moderation API",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What must happen before user content is published?",
+          "gold": "content moderation check",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the moderation endpoint?",
+          "gold": "content-mod.internal",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the comment publishing pipeline.",
+          "gold": "content-mod.internal",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is direct publishing of user content allowed?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-089",
+      "type": "implicit_context",
+      "statement": "BACKUP MANDATE: All database snapshots must be encrypted at rest using AES-256 and stored in a geo-redundant location.",
+      "questions": [
+        {
+          "q": "Design the database backup strategy.",
+          "gold": "AES-256 geo-redundant",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What encryption standard must database backups use?",
+          "gold": "AES-256",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What storage redundancy is required for backups?",
+          "gold": "geo-redundant",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the disaster recovery plan for the database tier.",
+          "gold": "AES-256 encrypted geo-redundant",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the snapshot schedule and storage policy.",
+          "gold": "AES-256 geo-redundant",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-090",
+      "type": "implicit_context",
+      "statement": "RATE LIMITING POLICY: All public API endpoints must enforce per-IP rate limiting of 100 requests per minute. Responses exceeding the limit must return HTTP 429.",
+      "questions": [
+        {
+          "q": "Design the API gateway rate limiting configuration.",
+          "gold": "100 requests per minute per IP",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What HTTP status code is returned when the rate limit is exceeded?",
+          "gold": "429",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the per-IP rate limit for public endpoints?",
+          "gold": "100 requests per minute",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the rate limiting middleware specification.",
+          "gold": "100 RPM per IP, HTTP 429",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the abuse prevention layer for the API.",
+          "gold": "rate limiting 100 RPM per IP",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-091",
+      "type": "implicit_context",
+      "statement": "OBSERVABILITY REQUIREMENT: Every service must expose a /metrics endpoint in Prometheus format for scraping by the central observability platform.",
+      "questions": [
+        {
+          "q": "Design the monitoring integration for a new service.",
+          "gold": "Prometheus /metrics endpoint",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What endpoint must every service expose for metrics?",
+          "gold": "/metrics",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "In what format must metrics be exposed?",
+          "gold": "Prometheus format",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the observability checklist for new service deployments.",
+          "gold": "Prometheus /metrics",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the metrics collection architecture.",
+          "gold": "Prometheus /metrics endpoint",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-092",
+      "type": "implicit_context",
+      "statement": "DATA RESIDENCY RULE: All data from EU users must be stored and processed exclusively within EU-region infrastructure. Cross-region replication of EU data is prohibited.",
+      "questions": [
+        {
+          "q": "Design the user data storage architecture for the EU market.",
+          "gold": "EU region only",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Where must EU user data be stored?",
+          "gold": "EU-region infrastructure",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is cross-region replication of EU data allowed?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the GDPR-compliant data routing policy.",
+          "gold": "EU data stays in EU region",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the multi-region deployment for the EU product.",
+          "gold": "EU-only storage for EU users",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-093",
+      "type": "implicit_context",
+      "statement": "MANDATORY AUDIT TRAIL: Every change to a user's account permissions must be recorded in the audit log with: actor ID, target user ID, old value, new value, and timestamp.",
+      "questions": [
+        {
+          "q": "Design the permission management service.",
+          "gold": "audit log with actor, target, old value, new value, timestamp",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What five fields must the permission audit log capture?",
+          "gold": "actor ID, target user ID, old value, new value, timestamp",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the role change workflow.",
+          "gold": "audit trail with all five fields",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What must be logged when permissions change?",
+          "gold": "actor ID, target user ID, old value, new value, timestamp",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the admin panel permission editor.",
+          "gold": "audit log required",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-094",
+      "type": "implicit_context",
+      "statement": "FAILOVER REQUIREMENT: The primary database must automatically failover to the standby replica within 60 seconds of a primary failure, with no manual intervention.",
+      "questions": [
+        {
+          "q": "Design the database high-availability architecture.",
+          "gold": "automatic failover within 60 seconds",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum failover time?",
+          "gold": "60 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Can failover require manual intervention?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the database resilience specification.",
+          "gold": "60-second automatic failover",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the recovery time objective for the database tier.",
+          "gold": "60 seconds automatic",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-095",
+      "type": "implicit_context",
+      "statement": "API VERSIONING POLICY: New API versions must maintain backward compatibility for a minimum of 12 months after the successor version is released.",
+      "questions": [
+        {
+          "q": "Design the API deprecation strategy.",
+          "gold": "12 months backward compatibility",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "How long must backward compatibility be maintained?",
+          "gold": "12 months",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "From when does the 12-month backward compatibility clock start?",
+          "gold": "after the successor version is released",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the API lifecycle management plan.",
+          "gold": "12-month compatibility window",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the versioning migration guide for API consumers.",
+          "gold": "12 months backward compatible",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-096",
+      "type": "implicit_context",
+      "statement": "SECURITY SCANNING MANDATE: Every container image must pass a vulnerability scan with zero critical CVEs before being promoted to the production registry.",
+      "questions": [
+        {
+          "q": "Design the CI/CD pipeline for container promotion.",
+          "gold": "vulnerability scan zero critical CVEs",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What CVE severity level must be zero before promotion?",
+          "gold": "critical",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "When must the vulnerability scan pass?",
+          "gold": "before promotion to the production registry",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the container security gate specification.",
+          "gold": "zero critical CVEs",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the image promotion policy.",
+          "gold": "vulnerability scan zero critical CVEs",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-097",
+      "type": "implicit_context",
+      "statement": "CACHING RULE: Cache invalidation events must be propagated to all nodes within 5 seconds. Stale reads beyond 5 seconds are a data integrity violation.",
+      "questions": [
+        {
+          "q": "Design the distributed cache invalidation mechanism.",
+          "gold": "within 5 seconds",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum cache invalidation propagation time?",
+          "gold": "5 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is a stale read beyond 5 seconds classified as?",
+          "gold": "data integrity violation",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the cache consistency protocol.",
+          "gold": "5-second propagation",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the distributed session cache update strategy.",
+          "gold": "invalidation within 5 seconds",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-098",
+      "type": "implicit_context",
+      "statement": "DEPENDENCY POLICY: No third-party library may be added to the codebase without a security review and approval from the AppSec team.",
+      "questions": [
+        {
+          "q": "Design the dependency management workflow.",
+          "gold": "AppSec review and approval",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Who must approve new third-party libraries?",
+          "gold": "AppSec team",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What process must precede adding a new library?",
+          "gold": "security review and approval from AppSec",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the open-source intake process.",
+          "gold": "AppSec approval required",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Can a developer add a library without review?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-099",
+      "type": "implicit_context",
+      "statement": "SCALABILITY POLICY: All services must implement graceful shutdown, completing in-flight requests within a 30-second drain window before terminating.",
+      "questions": [
+        {
+          "q": "Design the Kubernetes pod lifecycle configuration.",
+          "gold": "30-second graceful shutdown",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What is the maximum drain window for graceful shutdown?",
+          "gold": "30 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "What must happen to in-flight requests during shutdown?",
+          "gold": "completed within 30 seconds",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the deployment rollout strategy.",
+          "gold": "graceful shutdown 30 seconds",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the container termination lifecycle.",
+          "gold": "30-second drain window",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    },
+    {
+      "id": "PF-100",
+      "type": "implicit_context",
+      "statement": "NOTIFICATION REQUIREMENT: All system alerts of severity P1 or P2 must be sent via both email and SMS simultaneously. Using only one channel is non-compliant.",
+      "questions": [
+        {
+          "q": "Design the alerting and notification pipeline.",
+          "gold": "email and SMS simultaneously for P1/P2",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Which two channels must be used for P1/P2 alerts?",
+          "gold": "email and SMS",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Is it compliant to send a P1 alert only by email?",
+          "gold": "No",
+          "scoring": "exact_match",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Create the on-call notification configuration.",
+          "gold": "P1/P2 via email and SMS",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        },
+        {
+          "q": "Design the incident escalation notification design.",
+          "gold": "email and SMS for P1 and P2",
+          "scoring": "constraint_compliance",
+          "keywords": [],
+          "required_conclusion": ""
+        }
+      ]
+    }
+  ]
+}

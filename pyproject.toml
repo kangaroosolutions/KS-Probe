@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ks-probe"
+version = "0.1.0"
+description = "Kangaroo Shift KS-Probe: LLM context retention benchmark"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.scripts]
+ks-probe = "scripts.run_experiment:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ks_probe*", "scripts*", "analysis*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,97 @@
+models:
+  # ── OpenAI ────────────────────────────────────────────────────────────────
+  - id: gpt-5.2
+    provider: openai
+    max_context_tokens: 200000
+    cost_per_1k_input: 0.010
+    cost_per_1k_output: 0.030
+
+  - id: gpt-4.1
+    provider: openai
+    max_context_tokens: 128000
+    cost_per_1k_input: 0.005
+    cost_per_1k_output: 0.015
+
+  # ── Anthropic ─────────────────────────────────────────────────────────────
+  - id: claude-opus-4-6
+    provider: anthropic
+    max_context_tokens: 200000
+    cost_per_1k_input: 0.015
+    cost_per_1k_output: 0.075
+
+  - id: claude-sonnet-4-6
+    provider: anthropic
+    max_context_tokens: 200000
+    cost_per_1k_input: 0.003
+    cost_per_1k_output: 0.015
+
+  # ── Google ────────────────────────────────────────────────────────────────
+  - id: gemini-3.1-pro
+    provider: google
+    max_context_tokens: 1000000
+    cost_per_1k_input: 0.00125
+    cost_per_1k_output: 0.005
+
+  - id: gemini-2.5-pro
+    provider: google
+    max_context_tokens: 1000000
+    cost_per_1k_input: 0.00125
+    cost_per_1k_output: 0.005
+
+  # ── xAI ───────────────────────────────────────────────────────────────────
+  - id: grok-4.1-fast
+    provider: xai
+    max_context_tokens: 131072
+    cost_per_1k_input: 0.005
+    cost_per_1k_output: 0.015
+
+  # ── DeepSeek ──────────────────────────────────────────────────────────────
+  - id: deepseek-v3.2
+    provider: deepseek
+    max_context_tokens: 65536
+    cost_per_1k_input: 0.00027
+    cost_per_1k_output: 0.00110
+
+  - id: deepseek-r1
+    provider: deepseek
+    max_context_tokens: 65536
+    cost_per_1k_input: 0.00055
+    cost_per_1k_output: 0.00219
+
+  # ── Perplexity ────────────────────────────────────────────────────────────
+  - id: sonar-pro
+    provider: perplexity
+    max_context_tokens: 200000
+    cost_per_1k_input: 0.003
+    cost_per_1k_output: 0.015
+    notes: "Online model — synthetic probe facts not findable on web, forces context recall"
+
+  - id: sonar
+    provider: perplexity
+    max_context_tokens: 127000
+    cost_per_1k_input: 0.001
+    cost_per_1k_output: 0.001
+    notes: "Faster/cheaper Perplexity model"
+
+  # ── vLLM / Self-hosted ────────────────────────────────────────────────────
+  - id: llama-4-maverick
+    provider: vllm
+    max_context_tokens: 131072
+    cost_per_1k_input: 0.0
+    cost_per_1k_output: 0.0
+    notes: "Self-hosted via vLLM — set VLLM_API_BASE in .env"
+
+  - id: llama-4-scout
+    provider: vllm
+    max_context_tokens: 131072
+    cost_per_1k_input: 0.0
+    cost_per_1k_output: 0.0
+    notes: "Self-hosted via vLLM"
+
+  # ── Mock ──────────────────────────────────────────────────────────────────
+  - id: mock
+    provider: mock
+    max_context_tokens: 1000000
+    cost_per_1k_input: 0.0
+    cost_per_1k_output: 0.0
+    notes: "Deterministic mock — no API keys needed. Use for CI and local testing."
