@@ -28,7 +28,25 @@ class Exp1ContextFidelity(BaseExperiment):
     experiment_id = "exp1_context_fidelity"
 
     def build_run_specs(self) -> List[RunSpec]:
-        return self._planner.plan(self.config)
+        specs = self._planner.plan(self.config)
+        # Filter out runs where context_tokens exceeds the model's max
+        # (e.g. deepseek-v3.2 at 100K/150K when max is 65K)
+        filtered: List[RunSpec] = []
+        for spec in specs:
+            try:
+                mcfg = self.model_registry.get(spec.model_id)
+                if spec.context_tokens and spec.context_tokens > mcfg.max_context_tokens:
+                    logger.info(
+                        "[exp1] Dropping %s at %dk (max %dk)",
+                        spec.model_id,
+                        spec.context_tokens // 1000,
+                        mcfg.max_context_tokens // 1000,
+                    )
+                    continue
+            except KeyError:
+                pass
+            filtered.append(spec)
+        return filtered
 
     async def execute_run(self, spec: RunSpec) -> Dict[str, Any]:
         set_seed(spec.seed)

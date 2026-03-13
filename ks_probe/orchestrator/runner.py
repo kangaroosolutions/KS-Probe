@@ -90,7 +90,7 @@ class AsyncOrchestrator:
         limiter = self._limiters.get(spec.model_id)
         async with self._sem:
             if limiter and not self._mock_mode:
-                await limiter.acquire()
+                await limiter.acquire(estimated_tokens=spec.context_tokens or 0)
             try:
                 return await self._run_fn(spec)
             except Exception as exc:

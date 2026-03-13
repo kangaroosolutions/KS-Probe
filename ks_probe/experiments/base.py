@@ -36,14 +36,20 @@ from ks_probe.probes.types import ProbePool
 logger = logging.getLogger(__name__)
 
 # Default RPM per provider (conservative — override via models.yaml extra fields)
-_DEFAULT_RPM: Dict[str, int] = {
-    "openai": 20,
-    "anthropic": 20,
+_DEFAULT_RPM: Dict[str, float] = {
+    "openai": 10,
+    "anthropic": 10,   # RPM alone insufficient for Anthropic; paired with TPM below
     "google": 20,
     "xai": 20,
     "deepseek": 10,
     "vllm": 60,
     "mock": 1000,
+}
+
+# Default input-tokens-per-minute budget per provider.
+# Providers not listed here (or set to 0) use RPM-only limiting.
+_DEFAULT_TPM: Dict[str, int] = {
+    "anthropic": 25000,  # Tier-1 cap: 30K input tokens/min — 25K with safety buffer
 }
 
 
@@ -165,7 +171,11 @@ class BaseExperiment(ABC):
             except KeyError:
                 provider = "mock"
             rpm = _DEFAULT_RPM.get(provider, 10)
-            limiters[model_id] = TokenBucketRateLimiter(requests_per_minute=rpm)
+            tpm = _DEFAULT_TPM.get(provider, 0)
+            limiters[model_id] = TokenBucketRateLimiter(
+                requests_per_minute=rpm,
+                tokens_per_minute=tpm,
+            )
         return limiters
 
     def _save_run_log(

@@ -7,18 +7,15 @@ Results are written to a CSV (not the DB) since they don't fit ExperimentRun sch
 """
 from __future__ import annotations
 
-import asyncio
 import csv
-import json
 import logging
-import random
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
-from ks_probe.corpus.sampler import DomainSampler
+from ks_probe.corpus.sampler import DomainSampler, DOMAINS
 from ks_probe.corpus.tokenizer_utils import get_tokenizer
 from ks_probe.core.config import ExperimentConfig
-from ks_probe.core.seed import SeedManager, set_seed
+from ks_probe.core.seed import set_seed
 from ks_probe.experiments.base import BaseExperiment
 from ks_probe.orchestrator.planner import RunSpec
 
@@ -50,7 +47,7 @@ class Exp5TokenizerDivergence(BaseExperiment):
             "tokenizer_ids",
             list(self.config.models),
         )
-        n_samples: int = self.config.extra.get("n_samples", 500)
+        n_samples: int = self.config.extra.get("n_samples", 1000)
         tokens_per_sample: int = self.config.extra.get("tokens_per_sample", 500)
         seed: int = self.config.seeds[0] if self.config.seeds else 42
 
@@ -58,7 +55,12 @@ class Exp5TokenizerDivergence(BaseExperiment):
         results: List[Dict[str, Any]] = []
 
         for sample_idx in range(n_samples):
-            text = sampler.sample_text(target_chars=tokens_per_sample * 4)
+            # Cycle through domains for stratified coverage (enables Fig 11 domain breakdown)
+            domain = DOMAINS[sample_idx % len(DOMAINS)]
+            text = sampler.sample_text(
+                target_chars=tokens_per_sample * 4,
+                domain_mix={domain: 1.0},
+            )
 
             counts: Dict[str, int] = {}
             for tok_id in tokenizer_ids:
@@ -77,6 +79,7 @@ class Exp5TokenizerDivergence(BaseExperiment):
                     ratio = (cnt_a / cnt_b) if (cnt_a > 0 and cnt_b > 0) else None
                     results.append({
                         "sample_idx": sample_idx,
+                        "domain": domain,
                         "tokenizer_a": tok_a,
                         "tokenizer_b": tok_b,
                         "count_a": cnt_a,

@@ -1,0 +1,33 @@
+experiment_id: exp1_context_fidelity
+description: "RQ1 Enhanced — Context Fidelity Decay: 7 seeds + 175K/200K context sizes"
+
+models:
+  - gpt-5.2
+  - claude-sonnet-4-6
+  - grok-4.1-fast
+  - deepseek-v3.2
+
+# 7 seeds (up from 3) for proper confidence intervals & p-values
+# Checkpoint will skip seeds 1-3 at existing sizes (already in DB)
+seeds: [1, 2, 3, 4, 5, 6, 7]
+
+# Added 175K and 200K to probe upper context boundary behavior
+# Note: deepseek-v3.2 max=65K (runs 10K/25K/50K only)
+#       grok-4.1-fast max=131K (runs 10K-100K only, skips 150K+)
+#       gpt-5.2 & claude-sonnet-4-6: full range to 200K
+context_sizes: [10000, 25000, 50000, 100000, 150000, 175000, 200000]
+
+probes_per_run: 10
+probe_type_mix: [0.40, 0.35, 0.25]
+domain_mix: "equal"
+
+max_output_tokens: 2000
+max_concurrent: 40
+temperature: 0.0
+
+cost_confirm_threshold: 500.0
+dry_run: false
+mock_mode: false
+
+output_dir: outputs/exp1
+checkpoint_db: ""

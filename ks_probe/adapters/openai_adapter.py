@@ -38,7 +38,7 @@ class OpenAIAdapter(BaseModelAdapter):
         resp = await self._client.chat.completions.create(
             model=self._model_id,
             messages=messages,
-            max_tokens=max_output_tokens,
+            max_completion_tokens=max_output_tokens,
             temperature=temperature,
             top_p=top_p,
         )

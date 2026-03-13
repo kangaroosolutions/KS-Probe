@@ -104,6 +104,7 @@ class Exp3MultiTurn(BaseExperiment):
             experiment_name=self.experiment_id,
             model=spec.model_id,
             seed=spec.seed,
+            threshold_tokens=n_turns,  # turn count stored here for checkpoint dedup
             model_version=response.usage.model_version,
             condition="conversation",
             pra_score=pra,

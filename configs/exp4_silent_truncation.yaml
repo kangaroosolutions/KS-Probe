@@ -2,15 +2,10 @@ experiment_id: exp4_silent_truncation
 description: "RQ4 — Silent Truncation Detection: PRA for end-placed probes at 80–100% context fill"
 
 models:
-  - claude-sonnet-4-6
-  - claude-opus-4-6
-  - gpt-4.1
   - gpt-5.2
-  # - gemini-2.5-pro   # uncomment after adding GOOGLE_API_KEY to .env
+  - claude-sonnet-4-6
   - grok-4.1-fast
   - deepseek-v3.2
-  # - sonar-pro         # uncomment after adding PPLX_API_KEY to .env
-  # - llama-4-maverick  # uncomment only if running a local vLLM server
 
 seeds: [1, 2, 3]
 
@@ -22,7 +17,7 @@ probe_type_mix: [0.40, 0.35, 0.25]
 domain_mix: "equal"
 
 max_output_tokens: 1000
-max_concurrent: 4
+max_concurrent: 12
 temperature: 0.0
 
 cost_confirm_threshold: 500.0
@@ -33,5 +28,7 @@ output_dir: outputs/exp4
 checkpoint_db: ""
 
 # Extra config for Exp4
+# 3 fill levels: safe (0.85), near-edge (0.95), at-limit (1.00)
+# Captures the truncation cliff with fewer runs
 extra:
-  fill_levels: [0.80, 0.85, 0.90, 0.95, 0.98, 1.00]
+  fill_levels: [0.85, 0.95, 1.00]

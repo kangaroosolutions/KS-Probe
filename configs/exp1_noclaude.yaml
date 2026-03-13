@@ -1,0 +1,25 @@
+experiment_id: exp1_context_fidelity
+description: "Exp1 enhanced — Grok+DeepSeek remaining runs only (Claude out of credits)"
+
+models:
+  - gpt-5.2
+  - grok-4.1-fast
+  - deepseek-v3.2
+
+seeds: [1, 2, 3, 4, 5, 6, 7]
+context_sizes: [10000, 25000, 50000, 100000, 150000, 175000, 200000]
+
+probes_per_run: 10
+probe_type_mix: [0.40, 0.35, 0.25]
+domain_mix: "equal"
+
+max_output_tokens: 2000
+max_concurrent: 40
+temperature: 0.0
+
+cost_confirm_threshold: 500.0
+dry_run: false
+mock_mode: false
+
+output_dir: outputs/exp1
+checkpoint_db: ""

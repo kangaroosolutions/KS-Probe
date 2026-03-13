@@ -2,20 +2,17 @@ experiment_id: exp1_context_fidelity
 description: "RQ1 — Context Fidelity Decay: PRA as context grows 10K to 200K tokens"
 
 models:
-  - claude-sonnet-4-6
-  - claude-opus-4-6
-  - gpt-4.1
   - gpt-5.2
-  # - gemini-2.5-pro   # uncomment after adding GOOGLE_API_KEY to .env
+  - claude-sonnet-4-6
   - grok-4.1-fast
   - deepseek-v3.2
-  # - sonar-pro         # uncomment after adding PPLX_API_KEY to .env
-  # - llama-4-maverick  # uncomment only if running a local vLLM server
 
-seeds: [1, 2, 3, 4, 5]
+seeds: [1, 2, 3]
 
-# Context sizes to sweep (tokens)
-context_sizes: [10000, 50000, 100000, 150000, 200000]
+# Context sizes: {10K, 25K, 50K, 100K, 150K} — 200K dropped to stay within per-provider budget
+# 15x range still fully characterises fidelity decay trend (Fig 1)
+# Note: deepseek-v3.2 max is 65K — runs at 10K/25K/50K only; orchestrator skips oversized runs
+context_sizes: [10000, 25000, 50000, 100000, 150000]
 
 # Probe settings
 probes_per_run: 10

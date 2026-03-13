@@ -105,16 +105,20 @@ class RunPlanner:
                         ))
 
                 # exp3 — vary turn count
+                # context_tokens=turn so checkpoint can distinguish different
+                # turn counts for the same (model, seed); stored in DB as
+                # threshold_tokens so the checkpoint query matches correctly.
                 elif config.turns is not None:
                     for turn in config.turns:
                         specs.append(RunSpec(
                             run_key=make_run_key(
                                 config.experiment_id, model_id, seed,
-                                None, None, condition, turn,
+                                turn, None, condition, turn,
                             ),
                             experiment_name=config.experiment_id,
                             model_id=model_id,
                             seed=seed,
+                            context_tokens=turn,
                             turn_number=turn,
                             condition=condition or "conversation",
                             payload={"turns": turn},

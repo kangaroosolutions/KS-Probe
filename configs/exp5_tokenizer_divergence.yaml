@@ -1,25 +1,21 @@
 experiment_id: exp5_tokenizer_divergence
 description: "RQ5 — Cross-Model Tokenizer Divergence (local only, no API calls)"
 
-# These are treated as tokenizer IDs (not API model IDs)
+# Tokenizer IDs for the 4 target models + mock baseline
 models:
-  - gpt-4.1
+  - gpt-5.2
   - claude-sonnet-4-6
-  - gemini-2.5-pro
   - grok-4.1-fast
   - deepseek-v3.2
-  - llama-4-maverick
   - mock
 
 seeds: [42]
 
 # No context_sizes, positions, or turns — local experiment only
-# max_concurrent and temperature are irrelevant here
-
 max_output_tokens: 0
 max_concurrent: 1
 temperature: 0.0
-mock_mode: true    # Forced true in code regardless — just make it explicit
+mock_mode: true    # Forced true in code regardless
 
 cost_confirm_threshold: 999999.0   # Never prompt — this is free
 dry_run: false
@@ -28,12 +24,10 @@ output_dir: outputs/exp5
 checkpoint_db: ""
 
 extra:
-  n_samples: 500
+  n_samples: 1000     # 1000 samples per Fig 10 spec
   tokens_per_sample: 500
   tokenizer_ids:
-    - gpt-4.1
+    - gpt-5.2
     - claude-sonnet-4-6
-    - gemini-2.5-pro
+    - grok-4.1-fast
     - deepseek-v3.2
-    - llama-4-maverick
-    - mock

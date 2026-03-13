@@ -42,7 +42,7 @@ class CostEstimate:
                 f"  {b.model_id:<25} {b.num_runs:>6} "
                 f"${b.cost_per_run:>7.4f} ${b.total_cost:>9.2f}"
             )
-        print(f"  {'─'*55}")
+        print(f"  {'-'*55}")
         print(f"  {'TOTAL':<25} {'':>6} {'':>8} ${self.total:>9.2f}")
         print(f"{'='*70}\n")
 
@@ -83,9 +83,19 @@ def estimate_cost(
         num_context_sizes = len(valid_sizes) if valid_sizes else 1
         num_runs = num_context_sizes * num_seeds
 
-        # For positional experiments, each position = 1 run
+        # Positional experiments: each position = 1 run
         if config.positions:
             num_runs = len(config.positions) * num_seeds
+
+        # Multi-turn experiments (exp3): multiply by number of turn checkpoints
+        turns = config.turns
+        if turns:
+            num_runs = len(turns) * num_seeds
+
+        # Truncation experiments (exp4): multiply by number of fill levels
+        fill_levels = config.extra.get("fill_levels") if config.extra else None
+        if fill_levels:
+            num_runs = len(fill_levels) * num_seeds
 
         avg_input = avg_input_tokens_per_run
         avg_output = avg_output_tokens_per_run
