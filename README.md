@@ -15,6 +15,8 @@ A systematic benchmark for measuring how well large language models retain and r
 | RQ5 | Do tokenizer differences explain PRA divergence across models? | `exp5_tokenizer_divergence` |
 
 ---
+## Read our research paper here:
+https://kangaroo.solutions/#research 
 
 ## Models Tested
 
